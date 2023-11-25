@@ -42,7 +42,7 @@ export default function App() {
   return (
     <main className="countdown-container">
       <h1>Countdown to {year}</h1> { /* Now 'year' is defined so it should not give error */ }
-      <h1>Please click the comment button to share your New Year's resolution with others.</h1>
+   
       <div className="countdown">
         {Object.keys(timeLeft).map(interval => (
           <div className="countdown-element" key={interval}>
@@ -53,8 +53,13 @@ export default function App() {
       </div>
       <button onClick={resetCountdown} className="reset-button">Reset Countdown</button>
 
-      <a href="comment.html" className="comment-link" style={{ color: 'blue' }}>Go to Comments</a>
+      <a href="comment.html" className="comment-link" style={{ color: 'blue' }}>Share your New Year's resolution with others here!</a>
 
+      
+
+
+
+      
 
       {/* Fireworks added here */}
       <div className="firework"></div>
